@@ -27,7 +27,7 @@ const userController = {
         .select('-__v')
         .then(dbUsersData => {
             if(!dbUsersData) {
-                res.status(404).json({message: 'No User with this particular ID!'});
+                res.status(404).json({message: 'No User with this ID!'});
                 return; 
             }
             res.json(dbUsersData)
@@ -42,10 +42,10 @@ const userController = {
         User.findOneAndUpdate({_id: params.id}, body, {new: true, runValidators: true})
         .then(dbUsersData => {
             if(!dbUsersData) {
-                res.status(404).json({message: 'No User with this particular ID!'});
+                res.status(404).json({message: 'No User with this ID!'});
                 return;
             }
-            res.json(dbUserData);
+            res.json(dbUsersData);
         })
         .catch(err => res.json(err))
     },
@@ -54,10 +54,13 @@ const userController = {
         User.findOneAndDelete({_id: params.id})
         .then(dbUsersData => {
             if(!dbUsersData) {
-                res.status(404).json({message: 'No User with this particular ID!'});
+                res.status(404).json({message: 'No User with this ID!'});
                 return;
             }
-            res.json(dbUsersData);
+            
+        })
+        .then(() => {
+            res.json({ message: 'User deleted!' });
         })
         .catch(err => res.status(400).json(err));
     },
