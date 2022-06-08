@@ -4,7 +4,7 @@
 - [Description](#description)
 - [Installation](#installation)
 - [Usage](#usage)
-- [Questions](#questions)
+- [Contact](#contact)
 
 ## Description
 
@@ -12,6 +12,10 @@ An API for a social network web application where users can share their thoughts
   
 Walkthrough of the application:
   
+
+
+
+https://user-images.githubusercontent.com/89723289/172509780-bb7474d2-173e-43c9-b258-0e645f29799b.mp4
 
 
 
@@ -27,6 +31,8 @@ Walkthrough of the application:
   
 `npm start`
 
-## Questions
-✉️ Contact me with any questions: [email](mailto:kota418@gmail.com) , [GitHub](https://github.com/CodySawa)<br />
+## Contact
+✉️ [Email](mailto:kota418@gmail.com) 
+
+[GitHub](https://github.com/CodySawa)<br />
 
